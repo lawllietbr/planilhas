@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.excel</groupId>
+  <artifactId>separador-planilhas</artifactId>
+  <version>1.0.0</version>
+
+  <repositories>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
+
+  <dependencies>
+    <!-- Fork compatível com Apache POI 5.x -->
+   <dependency>
+  <groupId>com.github.pjfanning</groupId>
+  <artifactId>excel-streaming-reader</artifactId>
+  <version>5.0.1</version>
+</dependency>
+
+    <!-- Apache POI core -->
+ <dependency>
+  <groupId>org.apache.poi</groupId>
+  <artifactId>poi</artifactId>
+  <version>5.2.3</version>
+</dependency>
+
+<dependency>
+  <groupId>org.apache.poi</groupId>
+  <artifactId>poi-ooxml</artifactId>
+  <version>5.2.3</version>
+</dependency>
+
+<dependency>
+  <groupId>org.apache.poi</groupId>
+  <artifactId>poi-ooxml-full</artifactId>
+  <version>5.2.3</version>
+</dependency>
+
+
+
+    <!-- XMLBeans (necessário para POI) -->
+
+
+    <!-- Logging bridge SLF4J → Log4j2 -->
+<dependency>
+  <groupId>org.slf4j</groupId>
+  <artifactId>slf4j-api</artifactId>
+  <version>1.7.36</version>
+</dependency>
+    <!-- Log4j2 core -->
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.20.0</version>
+    </dependency>
+  </dependencies>
+</project>
